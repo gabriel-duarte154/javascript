@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+   <input type="number" name="vel" id="vel">km/h 
+   <input type="button" value="Verificar" onclick="verificar()">
+   <div id="res">Resultado:</div>
+   <script>
+    function verificar(){
+        var txtv =window.document.querySelector("input#vel")
+        var vel = Number(txtv.value)
+        var res = window.document.querySelector("div#res")
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong>km/h</p>`
+        if (vel > 70){
+            res.innerHTML += `<p>Você foi <strong>multado</strong>.</p>`
+        }
+            else{
+            res.innerHTML += `<p>Você <strong>não</strong> foi multado.</p>`
+            }
+    }
+   </script>
+
+</body>
+</html>

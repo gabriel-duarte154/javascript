@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+</head>
+<body>
+  <h1>Qual o seu país de origem?</h1>  
+  <input type="text" name="txtp" id="txtp">
+  <input type="button"  value = "enviar" onclick="enviar()">
+  <div id="res"></div>
+  <script>
+    function enviar(){
+        var pais = window.document.querySelector('input#txtp')
+        var paisV = txtp.value
+        var res = window.document.querySelector('div#res')
+        if (paisV == "Brasil"){
+            res.innerHTML = `<p>Você nasceu no/a ${paisV}</p>` 
+            res.innerHTML += "<p>Você é <strong>Brasileiro</strong>.</p>"
+        }
+        else{
+            res.innerHTML = `<p>Você nasceu no/a ${paisV}</p>` 
+            res.innerHTML += '<p>You are a <strong>foringer</strong> in Brazil.</p>'
+        }
+
+    }
+   
+    
+  </script>
+</body>
+</html>

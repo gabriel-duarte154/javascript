@@ -1,0 +1,32 @@
+body{
+    background-color:#b6d8c0;
+    font: normal 25pt Arial;
+    
+}
+header{
+    text-align: center;
+    color:#fedcba;
+    text-shadow: 5px 5px 7px #140e0194;
+    font: normal 25pt Arial;
+}
+section{
+    background-color:#c8d9bf;
+    border-radius: 10px;
+    padding: 10px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 5px 5px 10px #0e09024b;
+    
+
+}
+footer{
+text-align: end;
+text-align: center;
+font-style: italic;
+color:rgb(255, 255, 255);
+font-size: medium;
+}
+Div#res{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

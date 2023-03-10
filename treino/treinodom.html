@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Bottons</title>
+    <style>
+       div#b1{
+        font: normal  20pt arial;
+        background-color: blue;
+        width:200px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 50px;
+        
+       }
+       div#b2{
+        Font: normal 20pt arial;
+        background-color: coral;
+        width: 200px;
+        height:100px;
+        line-height: 100px;
+        text-align: center;
+        display: inline-block
+        
+        
+        ;
+       }
+    </style>
+</head>
+<body>
+ <div id ='b1'>interaja</div> 
+ <div id ='b2'>Clique aqui</div> 
+ <script>
+    var in1 = window.document.querySelector('div#b1')
+    var in2 = window.document.querySelector('div#b2')
+    in1.addEventListener('mouseenter', entrar)
+    in1.addEventListener('mouseout', sair)
+    in2.addEventListener('mouseenter', entrar1)
+    in2.addEventListener('mouseout', sair2)
+    function entrar(){
+        in1.style.background = "green"
+    }
+    function sair(){
+        in1.style.background = ""
+    }
+    function entrar1(){
+        in2.style.background = "gray"
+    }
+    function sair2(){
+        in2.style.background = ""
+    }
+
+ </script>  
+</body>
+</html>
