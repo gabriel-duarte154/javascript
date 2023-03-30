@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>New User Singup</h1>
+       <form action="" method="get" autocomplete="on">
+            <div>
+                <input type="text"  name="username" autocomplete="username" placeholder="username">
+                <p>Username must be and contain 5 - 12 characters</p>
+            </div>
+            <div>
+                <input type="email" name="email" autocomplete="email" placeholder="email">
+                <p>Email must be a valid, e.g me@mydomain.com</p>
+            </div>
+            <div>
+                <input type="password" name="password" autocomplete="new-password" placeholder="password">
+                <p>Password must alphanumeric (@._ and - are also alloewd) and be 8 - 20 characters</p>
+            </div>
+            <div>
+                <input type="tel" name="telephone" autocomplete="tel" placeholder="telephone">
+                <p>Telephone must be a valid BR number (xx 9 xxxxx xxxx)</p>
+            </div>
+       </form> 
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>
