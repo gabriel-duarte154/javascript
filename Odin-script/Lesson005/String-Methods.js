@@ -8,7 +8,7 @@ console.log(text.length)
 //String slice(), extrai uma parte de uma string é retorna a parte extraída em uma nova string, recebe dois parâmetros o início e o fim
 
 text = "Aplle, Banana, Kiwi";
-let slice = text.slice(7, 13);
+let slice = text.slice(7, 3);
 console.log(slice);
 
 //subtring(), a única de diferença e que se os valores passados forem menores que zero serâo considerados zeros
