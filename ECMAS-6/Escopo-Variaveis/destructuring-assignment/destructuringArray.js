@@ -22,3 +22,4 @@ let [,, ...rest] = alphabelt;
 console.log(rest);
 
 console.log(alphabelt.slice(2, ))
+
