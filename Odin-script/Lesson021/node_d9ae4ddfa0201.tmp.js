@@ -1,4 +1,4 @@
-let number = 10000000;
+let number = 10;
 let printPrimes = (num) => {
     let isprime = true;
     for (let i = 2; i < num; i++) {
