@@ -1,15 +1,24 @@
-body{
+body {
     background-color:rgb(58, 143, 143);
     font: normal 20pt Arial;
+    color: white;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     
 }
-header{
+header {
     text-align: center;
     color:rgb(255, 255, 255);
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.555);
 }
-section{
-    background-color: rgb(255, 255, 255);
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+section {
+    background-color: rgba(255, 255, 255, 0.397);
     border-radius: 20px;
     padding: 25px;
     width: 600px;
@@ -18,14 +27,27 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);
 
 }
-footer{
-text-align: end;
-text-align: center;
-font-style: italic;
-color:rgba(255, 255, 255, 0.384);
-font-size: medium;
+footer {
+    text-align: end;
+    text-align: center;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.384);
+    font-size: medium;
 }
-div{
-  text-align: center;  
-  padding:10px;
+div {
+    text-align: center;  
+    padding:10px;
+}
+img {
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+    animation: spin 3s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1.2);
+    } 50% {
+        transform: scale(0.8)
+    }
 }
